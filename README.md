@@ -28,6 +28,12 @@ Edit the `_config.yml` file to change all the settings to reflect your site.
 
 ## Screenshots
 
+###Light Mode
+![Code Faster Jekyll Theme - Light Mode](https://user-images.githubusercontent.com/42570659/69276931-3e573c00-0bd7-11ea-816f-8b8d811a6ce3.png)
+
+###Dark Mode
+![Code Faster Jekyll Theme - Dark Mode](https://user-images.githubusercontent.com/42570659/69276942-444d1d00-0bd7-11ea-8c46-875ecdee2ee8.png)
+
 ## Development
 
 ```
