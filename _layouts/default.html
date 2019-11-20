@@ -1,0 +1,27 @@
+---
+# layout: compress
+---
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+    {% seo %}
+  </head>
+
+  <body>
+  <script async src="{{site.baseurl}}/assets/js/main.js"></script>
+  {% include header.html %}
+
+  <main>
+    <article>
+      {{ content }}
+    </article>
+  </main>
+
+  {% include footer.html %}
+  </body>
+
+</html>

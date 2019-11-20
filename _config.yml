@@ -1,0 +1,45 @@
+#Blog configuration
+
+title: "Code  Faster!"  # Name of the blog
+baseurl:  # Leave empty for <yourusername>.github.io or add "/blog" for <yourusername>.github.io/blog/
+email: email@example.net # email used in contact page
+
+highlighter: rouge
+markdown: kramdown
+
+# Google Analytics Config
+#analytics: UA-XXXXXXXX-X # Google Analytics Id
+
+# Discuss Comments Config
+#disqus-shortname: my-blog-demo #Discuss Id
+
+
+#optimization using compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+sass:
+  sass_dir: /assets/css/_sass
+  style: compressed
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - LICENSE.md
+
+
+plugins:
+  - jekyll-seo-tag
+
+gems:
+  - jekyll-paginate
+paginate: 2

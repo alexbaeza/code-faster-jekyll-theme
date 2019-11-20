@@ -1,0 +1,13 @@
+<footer>
+  <p class="copyrights">
+    <small>
+      {{site.title | escape}}
+      | Developed by
+      <a href="https://github.com/alexbaeza">Alejandro Baeza</a>
+    </small>
+  </p>
+
+  {% if site.analytics %}
+    {% include analytics.html %}
+  {% endif %}
+</footer>

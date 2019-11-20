@@ -1,0 +1,19 @@
+---
+#  Front matter comment to ensure Jekyll properly reads file.
+---
+
+@charset "utf-8";
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+// Do not make any changes to this file. Go to /_sass and find the appropriate SCSS file and make changes there.
+@import "variables";
+@import "style";
+@import "google-fonts";
+
+

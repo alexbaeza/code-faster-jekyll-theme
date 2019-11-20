@@ -1,0 +1,331 @@
+html, body {
+  height: 100%;
+}
+
+header {
+  margin-bottom: 0.5em;
+}
+
+body {
+  background-color: $primary-bg-color;
+  max-width: $content-width;
+  font-family: $base-font-family;
+  margin: 0 auto;
+  line-height: $base-line-height;
+  font-size: $base-font-size;
+  color: $primary-font-color;
+  padding: 2em 1em;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+  @include media-query($on-palm) {
+    max-width: 100%;
+    padding: 1em;
+  }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 1.8;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-font-color;
+  }
+}
+
+
+p a {
+  color: $primary-font-color;
+  text-decoration: none;
+  background: -webkit-linear-gradient(transparent 90%, lighten($primary-color, 10%) 10%);
+  background: -moz-linear-gradient(transparent 90%, lighten($primary-color, 10%) 10%);
+  background: linear-gradient(transparent 90%, lighten($primary-color, 10%) 10%);
+
+  -webkit-box-shadow: inset 0 0 0 0 lighten($primary-color, 10%);
+  box-shadow: inset 0 0 0 0 lighten($primary-color, 10%);
+
+
+  -webkit-transition: box-shadow ease 1s;
+  -moz-transition: box-shadow ease 1s;
+  transition: box-shadow ease 1s;
+
+  &:hover {
+    color: $primary-bg-color, 50%;
+    -webkit-box-shadow: inset 0 -100px 0 0 lighten($primary-color, 10%);
+    box-shadow: inset 0 -100px 0 0 lighten($primary-color, 10%);
+
+  }
+}
+
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+pre,
+code {
+  overflow: auto;
+  font-size: 0.7*$base-font-size;
+  border-radius: 3px;
+  border: 1px solid $primary-color;
+
+  > code {
+    border: none;
+  }
+}
+
+pre {
+  padding: 1em;
+}
+
+code {
+  padding: 0.1em;
+}
+
+blockquote {
+  border-left: 2px solid $primary-color;
+  padding-left: 1em;
+  font-family: Georgia, Times, Times New Roman, serif;
+  font-size: 0.9*$base-font-size;
+  font-style: italic;
+}
+
+
+.headline, .post-headline {
+  font-size: 2em;
+  @include media-query($on-palm) {
+    font-size: 1em;
+  }
+}
+
+.headline, .site-title {
+  font-size: 4em;
+  @include media-query($on-palm) {
+    font-size: 2em;
+  }
+}
+
+
+.secondary-nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Home Button */
+.home-button {
+  background-repeat: no-repeat;
+  height: 2em;
+  width: 2em;
+  opacity: 0.9;
+  top: 3em;
+  left: 3em;
+
+  background-color: $primary-color;
+  -webkit-mask-image: url(../images/back-button.svg);
+  mask-image: url(../images/back-button.svg);
+
+  &:hover {
+    background-color: $primary-font-color;
+    opacity: 1;
+  }
+
+  @include media-query($on-laptop) {
+    top: 90%;
+    left: 90%;
+    height: 30px;
+    width: 30px;
+    opacity: 0.6;
+  }
+}
+
+
+/* Article list in index/home page */
+.article-list {
+  margin: 1em 0;
+}
+
+
+/* Pagination style */
+.pagination {
+  margin: 2em 0;
+  text-align: center;
+
+  a {
+    &:hover {
+      background-color: transparent;
+      color: $primary-font-color;
+    }
+  }
+
+  a, span {
+    padding: 7px 18px;
+    border: 1px solid #eee;
+    margin-left: -4px;
+    margin-right: -4px;
+    background-color: transparent;
+    display: inline-block;
+  }
+}
+
+
+/* Add video class for iframes to make them responsive */
+.video {
+  width: 100%;
+  height: 360px;
+  @include media-query($on-laptop) {
+    height: 300px;
+  }
+  @include media-query($on-palm) {
+    height: 180px;
+  }
+}
+
+// Adding 'Contents' headline to the TOC
+#markdown-toc::before {
+  content: "Contents";
+  font-weight: bold;
+}
+
+
+// Using numbers instead of bullets for listing
+#markdown-toc ul {
+  list-style: decimal;
+}
+
+#markdown-toc {
+  border: 1px solid, $primary-color;
+  padding: 1.5em;
+  list-style: decimal;
+  display: inline-block;
+}
+
+/* Theme switch button */
+.theme {
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  top: 2em;
+}
+
+/* Horizontal Divider */
+.divider {
+  margin: 1em 0;
+}
+
+/* Article card */
+.article-card {
+  box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: $secondary-bg-color;
+  border-radius: 0.3em;
+}
+
+.card-container {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.card-container {
+  text-align: left;
+  padding: 0.4em 0.4em 0.4em 1em;
+  background-color: $secondary-bg-color;
+  position: relative;
+  box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.card-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: $primary-font-color;
+}
+
+
+/*slider toggle switch */
+.theme-switch-container {
+  em {
+    font-size: 1rem;
+  }
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: $primary-color;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Footer navigation links */
+.links a {
+  margin-right: 1em;
+}
+
+/* Footer copyrights */
+.copyrights {
+  color: $secondary-font-color;
+}

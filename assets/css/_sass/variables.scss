@@ -1,0 +1,37 @@
+:root {
+  --primary-font-color: #424242;
+  --secondary-font-color: #aaa;
+  --primary-bg-color: #f7f7f9;
+  --secondary-bg-color: #fff;
+}
+
+[data-theme="dark"] {
+  --primary-font-color: #f7f7f9;
+  --secondary-font-color: #aaa;
+  --primary-bg-color: #1b1b1b;
+  --secondary-bg-color: #2b2b2b;
+}
+
+$primary-color: #00adb5;
+
+$primary-font-color: var(--primary-font-color);
+$secondary-font-color: var(--secondary-font-color);
+$primary-bg-color: var(--primary-bg-color);
+$secondary-bg-color: var(--secondary-bg-color);
+
+$base-font-family: 'Work Sans', sans-serif;
+$base-font-size: 20px;
+$base-font-weight: 400;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.7;
+
+$spacing-unit: 30px;
+
+$grey-color: #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark: darken($grey-color, 25%);
+
+// Width of the content area
+$content-width: 800px;
+$on-palm: 600px;
+$on-laptop: 1000px;

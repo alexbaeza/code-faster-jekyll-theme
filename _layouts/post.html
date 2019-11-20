@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="article-card">
+  <div class="card-container">
+    <h1 class="post-headline">{{page.title}}</h1>
+    <p class="meta"><small>{{page.date | date: '%d %B, %Y'}}</small></p>
+
+    {{content}}
+  </div>
+</div>
+
+<!-- Comments only for posts -->
+{% if page.path contains '_posts' %}
+  {% if site.disqus-shortname %}
+    {% include disqus.html %}
+  {% endif %}
+{% endif %}
