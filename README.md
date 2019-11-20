@@ -1,4 +1,4 @@
-[![Gem Version](https://badge.fury.io/rb/code-faster-theme.svg)](https://badge.fury.io/rb/code-faster-theme)
+[![Gem Version](https://badge.fury.io/rb/code-faster-jekyll-theme.svg)](https://badge.fury.io/rb/code-faster-jekyll-theme)
 
 ## Code Faster Jekyll Theme
 
