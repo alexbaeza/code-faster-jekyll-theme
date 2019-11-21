@@ -1,4 +1,6 @@
-[![Gem Version](https://badge.fury.io/rb/code-faster-jekyll-theme.svg)](https://badge.fury.io/rb/code-faster-jekyll-theme)
+![Stars](https://img.shields.io/github/stars/alexbaeza/code-faster-jekyll-theme?style=flat-square)
+![Forks](https://img.shields.io/github/forks/alexbaeza/code-faster-jekyll-theme?style=flat-square)
+![License](https://img.shields.io/github/license/alexbaeza/code-faster-jekyll-theme?style=flat-square)
 
 ## Code Faster Jekyll Theme
 
